@@ -1,2 +1,2 @@
 # Websiteku
-Lati
+Latihan
