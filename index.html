@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warung 46</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&family=DM+Sans&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f9fff9;
+  --green-dark: #1f3d2b;
+  --green-mid: #2f6b45;
+  --green-light: #4caf50;
+  --yellow: #d4af37;
+  --text: #1e2d1f;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'DM Sans', sans-serif;
+  background:var(--bg);
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:3rem 1rem;
+}
+
+.hero h1 {
+  font-family:'Playfair Display';
+  font-size:2.5rem;
+  color:var(--green-dark);
+}
+
+.hero em { color:var(--green-light); }
+
+.hero p {
+  margin-top:1rem;
+  color:var(--green-mid);
+}
+
+/* MENU */
+.menu {
+  padding:2rem 1rem;
+  max-width:900px;
+  margin:auto;
+}
+
+.title {
+  font-family:'Playfair Display';
+  margin-bottom:1.5rem;
+}
+
+/* CARD */
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
+
+.card {
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  transition:.3s;
+}
+
+.card:hover img {
+  transform:scale(1.05);
+}
+
+/* CONTENT */
+.card-body {
+  padding:1rem;
+}
+
+.card h3 {
+  font-family:'Playfair Display';
+  margin-bottom:.4rem;
+}
+
+.card p {
+  font-size:.85rem;
+  color:#555;
+}
+
+/* WA BUTTON */
+.wa {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:12px 15px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:2rem;
+  font-size:.8rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Warung <em>46</em></h1>
+  <p>Masakan Nusantara dengan cita rasa autentik</p>
+</section>
+
+<!-- MAKANAN -->
+<section class="menu">
+  <h2 class="title">Makanan</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="Pecel.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Pecel</h3>
+        <p>Sayuran dengan sambal kacang khas Jawa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Nasikuning.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Kuning</h3>
+        <p>Nasi gurih dengan lauk lengkap.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Nasicampur.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Campur</h3>
+        <p>Sajian lengkap dengan berbagai lauk.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MINUMAN -->
+<section class="menu">
+  <h2 class="title">Minuman</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="Kopi.jpg" alt="">
+      <div class="card-body">
+        <h3>Kopi</h3>
+        <p>Aroma kuat dan rasa khas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Esteh.jpg" alt="">
+      <div class="card-body">
+        <h3>Es Teh</h3>
+        <p>Segar dan menyegarkan.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WA -->
+<a class="wa" href="https://wa.me/6282228142962">💬 Pesan</a>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Warung 46</strong><br>
+  Dibuat dengan ❤️
+</footer>
+
+</body>
+</html>
