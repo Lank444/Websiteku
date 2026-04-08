@@ -1,250 +1,202 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Galang saktiawan</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warung 46</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&family=DM+Sans&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f9fff9;
+  --green-dark: #1f3d2b;
+  --green-mid: #2f6b45;
+  --green-light: #4caf50;
+  --yellow: #d4af37;
+  --text: #1e2d1f;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'DM Sans', sans-serif;
+  background:var(--bg);
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:3rem 1rem;
+}
+
+.hero h1 {
+  font-family:'Playfair Display';
+  font-size:2.5rem;
+  color:var(--green-dark);
+}
+
+.hero em { color:var(--green-light); }
+
+.hero p {
+  margin-top:1rem;
+  color:var(--green-mid);
+}
+
+/* MENU */
+.menu {
+  padding:2rem 1rem;
+  max-width:900px;
+  margin:auto;
+}
+
+.title {
+  font-family:'Playfair Display';
+  margin-bottom:1.5rem;
+}
+
+/* CARD */
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
+
+.card {
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  transition:.3s;
+}
+
+.card:hover img {
+  transform:scale(1.05);
+}
+
+/* CONTENT */
+.card-body {
+  padding:1rem;
+}
+
+.card h3 {
+  font-family:'Playfair Display';
+  margin-bottom:.4rem;
+}
+
+.card p {
+  font-size:.85rem;
+  color:#555;
+}
+
+/* WA BUTTON */
+.wa {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:12px 15px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:2rem;
+  font-size:.8rem;
+}
+</style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Halo, Saya <span class="highlight">Galang saktiawan</span></h1>
-                <h2>Web Developer & Designer</h2>
-                <p>Saya menciptakan pengalaman digital yang menakjubkan dengan kode yang bersih dan desain yang menarik.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
-                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
-                </div>
-            </div>
-            <div class="hero-image">
-            <img src="foto.jpg" alt="Foto Profil"      class="profile-pic">
+<!-- HERO -->
+<section class="hero">
+  <h1>Warung <em>46</em></h1>
+  <p>Masakan Nusantara dengan cita rasa autentik</p>
+</section>
+
+<!-- MAKANAN -->
+<section class="menu">
+  <h2 class="title">Makanan</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="Pecel.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Pecel</h3>
+        <p>Sayuran dengan sambal kacang khas Jawa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Nasikuning.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Kuning</h3>
+        <p>Nasi gurih dengan lauk lengkap.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Nasicampur.jpg" alt="">
+      <div class="card-body">
+        <h3>Nasi Campur</h3>
+        <p>Sajian lengkap dengan berbagai lauk.</p>
+      </div>
+    </div>
+
   </div>
-        </div>
-    </section>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Tentang Saya</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Saya adalah developer passionate dengan pengalaman 3+ tahun dalam membangun website dan aplikasi web yang responsif dan user-friendly. Saya suka mengubah ide menjadi realitas digital.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Exp</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Client Satis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- MINUMAN -->
+<section class="menu">
+  <h2 class="title">Minuman</h2>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span>HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-bars">
-                        <div class="skill-item">
-                            <span>Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>PHP</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="cards">
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects Terbaru</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=E-Commerce" alt="E-Commerce">
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>Platform e-commerce modern dengan fitur pembayaran dan admin dashboard.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link">Live Demo</a>
-                            <a href="#" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/7ED321/FFFFFF?text=Portfolio" alt="Portfolio">
-                    </div>
-                    <div class="project-info">
-                        <h3>Personal Portfolio</h3>
-                        <p>Portfolio responsif dengan animasi smooth dan dark mode toggle.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link">Live Demo</a>
-                            <a href="#" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/F5A623/FFFFFF?text=Dashboard" alt="Dashboard">
-                    </div>
-                    <div class="project-info">
-                        <h3>Admin Dashboard</h3>
-                        <p>Dashboard analitik dengan chart interaktif dan data real-time.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Chart.js</span>
-                            <span>Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link">Live Demo</a>
-                            <a href="#" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="card">
+      <img src="Kopi.jpg" alt="">
+      <div class="card-body">
+        <h3>Kopi</h3>
+        <p>Aroma kuat dan rasa khas.</p>
+      </div>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Hubungi Saya</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>Saktigalng4@email.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+62 822 2959 3081</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/Galang saktiawan</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nama Anda" required>
-                    <input type="email" placeholder="Email Anda" required>
-                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <div class="card">
+      <img src="Esteh.jpg" alt="">
+      <div class="card-body">
+        <h3>Es Teh</h3>
+        <p>Segar dan menyegarkan.</p>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Galang saktiawan. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- WA -->
+<a class="wa" href="https://wa.me/6282228142962">💬 Pesan</a>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Warung 46</strong><br>
+  Dibuat dengan ❤️
+</footer>
+
 </body>
 </html>
